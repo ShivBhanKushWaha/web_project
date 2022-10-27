@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerlinks}}
+</head>
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><i class="fi fi-bs-snowflake"></i>SkWeather<i class="fi fi-bs-snowflake"></i></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/weather">Weather</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/about">AboutUs</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div> 
+
+    <!-- main header -->
+
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side div -->
+            <div class="col-md-12 col-12 main_header_left align-items-center">
+                <figure class="errimg">
+                    <img src="images/404.png" alt="sk" class="img-fluid">
+                </figure>
+                <p>
+                  Welcomt to my youtube channel
+                </p>
+                <h1>{{errmsg}}</h1>
+                <a href="/weather"> <button>Go back</button> </a>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer code  -->
+    {{>footer}}
+</body>
+</html>
