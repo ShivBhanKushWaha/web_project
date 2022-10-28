@@ -47,7 +47,7 @@ app.get("/weather",(req,res) => {
 
 //if page is not exist
 app.get("*",(req,res) => {
-    errmsg = "not valid"
+    errmsg = "Oops! page not found , click here to go back";
     res.render('404error');
 });
 
